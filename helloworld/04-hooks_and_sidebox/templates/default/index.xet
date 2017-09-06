@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- $Id$ -->
+<overlay>
+	<template id="helloworld.index" template="" lang="" group="0" version="0.1">
+		<hbox>
+			<description value="First Name:"/>
+			<textbox blur="Your first name" id="fname"/>
+			<description value="Second Name"/>
+			<textbox blur="Your second name" id="sname"/>
+		</hbox>
+		<grid>
+			<columns>
+				<column/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<description value="Position:"/>
+					<textbox blur="Enter position" id="position"/>
+				</row>
+				<row>
+					<description value="Department:"/>
+					<menulist>
+						<menupopup id="dep_id"/>
+					</menulist>
+				</row>
+			</rows>
+		</grid>
+		<button label="submit" id="submit"/>
+		<textbox multiline="true" id="debug" readonly="true"/>
+	</template>
+</overlay>

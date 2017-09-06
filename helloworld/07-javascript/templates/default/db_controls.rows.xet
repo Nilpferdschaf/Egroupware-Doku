@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- $Id$ -->
+<overlay>
+	<template id="helloworld.db_controls.rows" template="" lang="" group="0" version="0.1">
+		<grid>
+			<columns>
+				<column/>
+				<column/>
+				<column/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<nextmatch-sortheader label="First Name" id="fname"/>
+					<nextmatch-sortheader label="Second Name" id="sname"/>
+					<nextmatch-sortheader label="Position" id="position"/>
+					<nextmatch-sortheader label="Department" id="dep_name"/>
+				</row>
+				<row>
+					<description id="${row}[fname]"/>
+					<description id="${row}[sname]"/>
+					<description id="${row}[position]"/>
+					<description id="${row}[dep_name]"/>
+				</row>
+			</rows>
+		</grid>
+	</template>
+</overlay>

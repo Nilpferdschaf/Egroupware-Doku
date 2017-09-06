@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!-- $Id$ -->
+<overlay>
+	<template id="helloworld.db_controls.rows" template="" lang="" group="0" version="0.1">
+		<grid>
+			<columns>
+				<column/>
+				<column/>
+				<column/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<nextmatch-sortheader label="First Name" id="fname"/>
+					<nextmatch-sortheader label="Second Name" id="sname"/>
+					<nextmatch-sortheader label="Position" id="position"/>
+					<nextmatch-sortheader label="Department" id="dep_name"/>
+				</row>
+				<row>
+					<description id="${row}[fname]"/>
+					<description id="${row}[sname]"/>
+					<description id="${row}[position]"/>
+					<description id="${row}[dep_name]"/>
+				</row>
+			</rows>
+		</grid>
+	</template>
+	<template id="helloworld.db_controls" template="" lang="" group="0" version="0.1">
+		<hbox>
+			<description value="Take entry for"/>
+			<textbox blur="Your first name" id="select[fname]" class="entry-select"/>
+			<textbox blur="Your second name" id="select[sname]" class="entry-select"/>
+			<description value="and"/>
+			<button label="delete it" id="delete"/>
+			<description value="or"/>
+		</hbox>
+		<vbox>
+			<description value="Change the entrie's values to:"/>
+			<textbox blur="New first name" id="change[fname]"/>
+			<textbox blur="New second name" id="change[sname]"/>
+			<textbox blur="New position" id="change[position]"/>
+			<menulist>
+				<menupopup id="change[dep_id]"/>
+			</menulist>
+		</vbox>
+		<button label="Modify" id="modify"/>
+		<nextmatch id="nm" template="helloworld.db_controls.rows"/>
+		<textbox multiline="true" id="debug" readonly="true"/>
+	</template>
+</overlay>

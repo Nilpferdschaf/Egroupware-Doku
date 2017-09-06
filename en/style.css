@@ -1,0 +1,164 @@
+body {
+	box-sizing: border-box;
+	position: absolute;
+	left:50%;
+	margin: 0;
+	margin-left: -35%; 
+	width:70%;
+	padding: 20px 50px;
+	background: white;
+	box-shadow: 0 0 10px grey;
+	font-size:80%;
+}
+
+html {
+	background: lightgrey;
+}
+
+p {
+	text-align: justify;
+}
+
+.download {
+	font-style: italic;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 1px 20px;
+	background: lightgrey;
+}
+
+li {
+	margin-top: 10px;
+}
+
+a:visited {
+	color: #555;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	width: 95%;
+	border: 1px solid grey;
+	box-shadow: 0 0 5px grey;
+}
+
+img.small{
+	width:400px;
+}
+
+img.icon{
+	width:32px;
+	display:inline-block;
+}
+
+#sidebox-img, img.sidebox {
+	width:200px;
+}
+
+.code, .command{
+	font-family: monospace;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding:10px;
+	border-radius: 3px;
+	box-shadow: inset 0 0 10px 0px grey;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+}
+
+.code{
+	background:#fec;
+	color:#444;
+}
+
+.command {
+	background:black;
+	color:white;
+}
+
+.comment {
+	color:#666;
+}
+
+.change{
+	color: red;
+}
+
+.file {
+	font-family: monospace;
+	font-size: 1.4em;
+	font-style: italic;
+}
+
+.var, .class, .function {
+	font-family: monospace;
+	font-size: 1.2em;
+	padding:1px 1px;
+	background:#fec;
+	color:#444;
+}
+
+.app {
+  font-style: italic;
+}
+
+.url {
+	font-family: monospace;
+	font-size: 1.2em;
+	color: darkblue;
+}
+
+.button {
+	font-weight: bold;
+}
+
+.option {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.string, .value, .column {
+	font-style: italic;
+}
+
+.folder{
+	margin-left:20px;
+	margin-top:8px;
+	border: 0;
+	border-left: 2px dotted grey;
+	padding-left:5px;
+}
+
+.indent{
+	margin-left:20px;
+}
+
+.navigation {
+	height: 30px;
+}
+
+.navigation a {
+	text-decoration: none;
+}
+
+.back {
+	text-decoration: none;
+	font-size: .7em;
+	padding-left: 5px;
+}
+
+.prev {
+	float: left;
+	padding: 5px 15px;
+	background: lightgreen;
+}
+
+.next {
+	float: right;
+	background: lightgreen;
+	padding: 5px 15px;
+}

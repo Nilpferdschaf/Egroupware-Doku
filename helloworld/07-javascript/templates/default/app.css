@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+.entry-select {
+	background: pink;
+}
+
+#helloworld-db_controls_delete {
+	margin-left: 0;
+}
+
+.egwGridView_grid tr:nth-of-type(even) {
+	background: lightgrey;
+}
+
+#helloworld-db_controls_change\[fname\], 
+#helloworld-db_controls_change\[sname\], 
+#helloworld-db_controls_change\[position\], 
+#helloworld-db_controls_change\[dep_id\]{
+	margin-left: 20px;
+}

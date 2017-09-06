@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!-- $Id$ -->
+<overlay>
+	<template id="helloworld.index" template="" lang="" group="0" version="0.1">
+		<hbox>
+			<description value="First Name:"/>
+			<textbox blur="Your first name" id="fname" onchange="app.helloworld.preview();"/>
+			<description value="Second Name"/>
+			<textbox blur="Your second name" id="sname" onchange="app.helloworld.preview();"/>
+		</hbox>
+		<grid>
+			<columns>
+				<column/>
+				<column/>
+			</columns>
+			<rows>
+				<row>
+					<description value="Position:"/>
+					<textbox blur="Enter position" id="position" onchange="app.helloworld.preview();"/>
+				</row>
+				<row>
+					<description value="Department:"/>
+					<menulist>
+						<menupopup id="dep_id" onchange="app.helloworld.preview();"/>
+					</menulist>
+				</row>
+				<row>
+					<description value="Password:"/>
+					<passwd id="pass1"/>
+				</row>
+				<row>
+					<description value="Repeat Password:"/>
+					<passwd id="pass2"/>
+				</row>
+			</rows>
+		</grid>
+		<vbox>
+			<description value="Enter your details, then click Submit." id="preview-text"/>
+			<button label="submit" id="submit"/>
+		</vbox>
+		<textbox multiline="true" id="debug" readonly="true"/>
+	</template>
+</overlay>
